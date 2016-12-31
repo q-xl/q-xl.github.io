@@ -1,2 +1,2 @@
 # q-xl.github.io
-web_demo
+web_demo & online resume
