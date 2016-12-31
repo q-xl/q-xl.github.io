@@ -1,12 +1,14 @@
 *{ margin: 0; padding: 0;}
 
-body{ font-size: 16px; font-family: "Microsoft YaHei";}
+body{
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+}
 
 header.title{
 	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
 	background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
 	border-bottom: solid 1px #275da1;
-	margin-bottom: 0.8rem;
 }
 header.title h1{
 	width: 540px;
@@ -55,9 +57,20 @@ header.title a.button small {
   font-size: 11px;
 }
 
+.main{
+	padding: 0.8rem 0;
+	background-color: #ccc;
+	background-image: url("../images/sail.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100%;
+}
+
 .card{
 	width: 80%;
 	margin: 0 auto 0.8em auto;
+	background-color: rgba(255,255,255,0.6);
 }
 
 .card_content{
@@ -65,15 +78,24 @@ header.title a.button small {
 }
 .card_content p{
 	font-size: 14px;
-	color: #666;
+	color: #333;
 }
 
 .shyButton {
     font-size: .75em;
 }
 
+@media only screen and (max-width:1024px){
+	.main{
+		background-position: 50% 100%;
+	}
+}
+
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
+  body{
+		background-image: linear-gradient(to right,#0266b2, #013581);
+	}
   header.title .inner {
     width: 740px;
   }
@@ -87,6 +109,12 @@ header.title a.button small {
     font-size: 30px;
   }
 
+  .main{
+		background-image: url("../images/rudder.jpg");
+		background-position: 0 100%;
+		background-color: transparent;
+	}
+
   .card{
 	width: 92%;
   }
@@ -94,47 +122,56 @@ header.title a.button small {
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-  header.title .inner {
-    width: 93%;
-  }
-  header.title {
-    padding: 20px 0;
-  }
-  header.title .inner {
-    position: relative;
-  }
-  header.title h1, header.title h2 {
-    width: 100%;
-  }
-  header.title h1 {
-    font-size: 48px;
-  }
-  header.title h2 {
-    font-size: 24px;
-  }
-  header.title a.button {
-    position: relative;
-    display: inline-block;
-    width: auto;
-    height: auto;
-    padding: 5px 10px;
-    margin-top: 15px;
-    font-size: 13px;
-    line-height: 1;
-    color: #2879d0;
-    text-align: center;
-    background-color: #9ddcff;
-    background-image: none;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-  }
-  header.title a.button small {
-    display: inline;
-    font-size: 13px;
-  }
+	body{
+		background-image: linear-gradient(to right,#0266b2, #013581);
+	}
+	header.title .inner {
+		width: 93%;
+	}
+	header.title {
+		padding: 20px 0;
+	}
+	header.title .inner {
+		position: relative;
+	}
+	header.title h1, header.title h2 {
+		width: 100%;
+	}
+	header.title h1 {
+		font-size: 48px;
+	}
+	header.title h2 {
+		font-size: 24px;
+	}
+	header.title a.button {
+		position: relative;
+		display: inline-block;
+		width: auto;
+		height: auto;
+		padding: 5px 10px;
+		margin-top: 15px;
+		font-size: 13px;
+		line-height: 1;
+		color: #2879d0;
+		text-align: center;
+		background-color: #9ddcff;
+		background-image: none;
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+	header.title a.button small {
+		display: inline;
+		font-size: 13px;
+	}
 
-  .card{
-	width: 98%;
-  }
+	.main{
+		background-image: url("../images/rudder.jpg");
+		background-position: 0 100%;
+		background-color: transparent;
+	}
+
+	.card{
+		width: 98%;
+	}
 }
