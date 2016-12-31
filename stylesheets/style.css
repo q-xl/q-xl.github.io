@@ -1,0 +1,140 @@
+*{ margin: 0; padding: 0;}
+
+body{ font-size: 16px; font-family: "Microsoft YaHei";}
+
+header.title{
+	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+	background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
+	border-bottom: solid 1px #275da1;
+	margin-bottom: 0.8rem;
+}
+header.title h1{
+	width: 540px;
+  	margin-top: 0;
+  	margin-bottom: 0.2em;
+  	padding: 0;
+  	font-size: 72px;
+  	font-weight: normal;
+  	line-height: 1;
+  	color: #fff;
+  	letter-spacing: -1px;
+}
+header.title h2 {
+	width: 540px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 26px;
+	font-weight: normal;
+	line-height: 1.3;
+	color: #9ddcff;
+	letter-spacing: 0;
+}
+header.title .inner {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+header.title a.button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent url(../images/github-button.png) 0 0 no-repeat;
+}
+header.title a.button {
+  width: 202px;
+  height: 80px;
+  padding-top: 22px;
+  padding-left: 68px;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 23px;
+  line-height: 1.2;
+  color: #fff;
+}
+header.title a.button small {
+  display: block;
+  font-size: 11px;
+}
+
+.card{
+	width: 80%;
+	margin: 0 auto 0.8em auto;
+}
+
+.card_content{
+	padding: 0.6em 0.8em;
+}
+.card_content p{
+	font-size: 14px;
+	color: #666;
+}
+
+.shyButton {
+    font-size: .75em;
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  header.title .inner {
+    width: 740px;
+  }
+  header.title h1, header.title h2 {
+    width: 340px;
+  }
+  header.title h1 {
+    font-size: 60px;
+  }
+  header.title h2 {
+    font-size: 30px;
+  }
+
+  .card{
+	width: 92%;
+  }
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+  header.title .inner {
+    width: 93%;
+  }
+  header.title {
+    padding: 20px 0;
+  }
+  header.title .inner {
+    position: relative;
+  }
+  header.title h1, header.title h2 {
+    width: 100%;
+  }
+  header.title h1 {
+    font-size: 48px;
+  }
+  header.title h2 {
+    font-size: 24px;
+  }
+  header.title a.button {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 1;
+    color: #2879d0;
+    text-align: center;
+    background-color: #9ddcff;
+    background-image: none;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+  header.title a.button small {
+    display: inline;
+    font-size: 13px;
+  }
+
+  .card{
+	width: 98%;
+  }
+}
