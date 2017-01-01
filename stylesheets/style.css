@@ -3,6 +3,12 @@
 body{
 	font-size: 16px;
 	font-family: "Microsoft YaHei";
+	background-color: #ccc;
+	background-image: url("../images/sail.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100%;
 }
 
 header.title{
@@ -59,12 +65,7 @@ header.title a.button small {
 
 .main{
 	padding: 0.8rem 0;
-	background-color: #ccc;
-	background-image: url("../images/sail.jpg");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	background-size: 100%;
+	
 }
 
 .card{
@@ -86,7 +87,7 @@ header.title a.button small {
 }
 
 @media only screen and (max-width:1024px){
-	.main{
+	.body{
 		background-position: 50% 100%;
 	}
 }
@@ -95,6 +96,9 @@ header.title a.button small {
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   body{
 		background-image: linear-gradient(to right,#0266b2, #013581);
+		background-color: transparent;
+		background-image: url("../images/rudder.jpg");
+		background-position: 0 100%;
 	}
   header.title .inner {
     width: 740px;
@@ -109,12 +113,6 @@ header.title a.button small {
     font-size: 30px;
   }
 
-  .main{
-		background-image: url("../images/rudder.jpg");
-		background-position: 0 100%;
-		background-color: transparent;
-	}
-
   .card{
 	width: 92%;
   }
@@ -123,7 +121,9 @@ header.title a.button small {
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
 	body{
-		background-image: linear-gradient(to right,#0266b2, #013581);
+		background-color: transparent;
+		background-image: url("../images/rudder.jpg"),linear-gradient(to right,#0266b2, #013581);;
+		background-position: 0 100%;
 	}
 	header.title .inner {
 		width: 93%;
@@ -163,12 +163,6 @@ header.title a.button small {
 	header.title a.button small {
 		display: inline;
 		font-size: 13px;
-	}
-
-	.main{
-		background-image: url("../images/rudder.jpg");
-		background-position: 0 100%;
-		background-color: transparent;
 	}
 
 	.card{
