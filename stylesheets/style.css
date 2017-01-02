@@ -1,5 +1,10 @@
 *{ margin: 0; padding: 0;}
 
+body{
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+}
+
 header.title{
 	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
 	background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
@@ -52,7 +57,11 @@ header.title a.button small {
   font-size: 11px;
 }
 
-
+.main{
+	width: 80%;
+	padding: 0.8rem 0;
+	margin: 0 auto;
+}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
