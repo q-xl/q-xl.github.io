@@ -1,8 +1,0 @@
-title: q-xl.github.io
-description: web_demo
-google_analytics: 
-show_downloads: true
-theme: jekyll-theme-architect
-
-gems:
-  - jekyll-mentions
