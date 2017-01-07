@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 18px;
+  background-color: #99e5ff;
+  background-image: url("../images/bg_large.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+  /* Tablet Portrait size to standard 960 (devices and browsers) */
+  /* All Mobile Sizes (devices and browser) */
+}
+@media only screen (max-width: 959px) {
+  body {
+    background-color: transparent;
+    background-image: url("../images/bg_small.jpg"), linear-gradient(to right, #0a6cc7, #0873c3);
+    background-position: 0 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: transparent;
+    background-image: url("../images/bg_small.jpg"), linear-gradient(to right, #0a6cc7, #0873c3);
+    background-position: 0 100%;
+  }
+}
+section {
+  position: absolute;
+  top: 3.3em;
+  font-family: "Microsoft YaHei";
+  height: calc(89.5%);
+}
+section .row {
+  height: 100%;
+}
+section .row .tab {
+  padding: 0 1em 0 1em;
+}
+section .row .tab > div {
+  height: 100%;
+  overflow-y: auto;
+}
+section .row .tab .card {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+section .row .tab .card p {
+  font-size: 0.8em;
+}

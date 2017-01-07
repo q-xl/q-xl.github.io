@@ -1,0 +1,50 @@
+*{ margin: 0; padding: 0;}
+
+body{
+	font-size: 18px;
+	background-color: #99e5ff;
+	background-image: url("../images/bg_large.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 100%;
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen (max-width: 959px) {
+		background-color: transparent;
+		background-image: url("../images/bg_small.jpg"),linear-gradient(to right,#0a6cc7, #0873c3);
+		background-position: 0 100%;
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 768px) {
+		background-color: transparent;
+		background-image: url("../images/bg_small.jpg"),linear-gradient(to right,#0a6cc7, #0873c3);
+		background-position: 0 100%;
+	}
+}
+
+section{
+	position: absolute;
+	top: 3.3em;
+	font-family: "Microsoft YaHei";
+	height: calc(100% - 8.5em - 2px);
+	.row{
+		height: 100%;
+		.tab{
+			padding: 0 1em 0 1em;
+			& > div{
+				height: 100%;
+				overflow-y: auto;
+			}
+			.card{
+				background-color: rgba(255,255,255,0.8);
+				p{
+					font-size: 0.8em;
+				}
+			}
+		}
+	}
+}
+
+
